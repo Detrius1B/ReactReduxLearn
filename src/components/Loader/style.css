@@ -1,0 +1,30 @@
+.loader {
+    /*background-color: red;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes spring {
+    0% {
+        transform: translateY(-30px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+.loader-spring {
+    width: 69px;
+    height: 42px;
+    background-color: aqua;
+    animation: spring infinite 1s ease;
+}
